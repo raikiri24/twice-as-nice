@@ -1,0 +1,183 @@
+/* 360 */
+@media only screen and (max-width:360px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    background-color: #FFFEEB;
+    color: #2d1e17;
+  }
+
+  /* Header */
+  header {
+    background-color: #C43C1E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #logo {
+    width: 120px;
+  }
+
+  #account, #shopping-bag {
+    width: 24px;
+    height: auto;
+  }
+
+  /* Banner */
+    .banner img {
+      width: auto;
+      height: 400px;
+      object-fit: cover;
+      object-position: right;
+    }
+
+  .banner .text-wrapper {
+    width: 250px;
+    height: 100px;
+    left: 30;
+    top; 70;
+    font-size: 18px;
+    color: #763C00;
+  }
+
+  .banner .HOMEBAKED-GUDNESS {
+    font-size: 36px;
+    color: #C43C1E;
+    font-weight: bold;
+  }
+
+
+  /* Promo Section */
+  .promo {
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+ .cookie-pic {
+    object-position: !important;
+    width: 900%;
+    max-width: 200px;
+    object-position: center;
+    border-radius: 10px;
+  }
+
+  .promo .brown-butter {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .promo .cart-button {
+    background-color: #ffCB65;
+    color: #763C00;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /* Shop for More */
+  .shop-content {
+    padding: 20px;
+    flex-direction:;
+  }
+
+  .shop-content .more {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+
+  .shop-products .shop-sample {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .shop-products .shop-button {
+    background-color: #7c3b1d;
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .shop-pic {
+     height: 180px;
+    width: 1000px;
+    border-radius: 15px;
+    overflow: hidden; 
+    position: relative;
+  }
+  /* Testimonials */
+  .testimonials {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .testimonials .reviews-content {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .reviews-content .review-header {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .reviews-content .reviews-text {
+    font-size: 14px;
+  }
+
+  /* Order Section */
+  .order {
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+   .order-title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+    .order-desc {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #C43C1E;
+    color: white;
+    flex-direction: column-reverse;
+  }
+
+  footer .credits {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  footer .social-icons img {
+    width: 40px;
+  }
+}
+
