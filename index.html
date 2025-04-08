@@ -55,8 +55,8 @@
             <div
               class="flex items-center flex-col text text-[#c43c1e] text-7xl"
             >
-              <p class="text-shadow-[#8b2c2e] text-shadow-2xs">HOMEBAKED</p>
-              <p>GUDNESS!</p>
+              <p class="text-shadow-[#8b2c2e] text-shadow-lg">HOMEBAKED</p>
+              <p class="text-shadow-[#8b2c2e] text-shadow-lg">GUDNESS!</p>
             </div>
             <a
               class="border !px-12 !py-4 rounded-md text-white bg-[#8b2c2e]"
@@ -69,14 +69,14 @@
         <div class="w-full max-md:hidden"></div>
       </div>
       <section
-        class="bg-[#fffeeb] h-screen flex justify-center max-md:items-start max-md:!p-10 items-center bg-[url('images/feature-background.png')] bg-cover bg-no-repeat !px-[10rem]"
+        class="max-md:hidden bg-[#fffeeb] h-[40rem] flex justify-center max-md:items-start max-md:!p-10 max-lg:!p-20 max-md:!xl-10 items-center bg-[url('images/feature-background.png')] bg-cover bg-no-repeat !px-[10rem]"
       >
         <div
-          class="grid grid-cols-4 grid-rows-1 gap-4 bg-[#763c00] rounded-md max-md:hidden items-center"
+          class="grid grid-cols-4 grid-rows-1 gap-4 bg-[#763c00] rounded-md items-center"
         >
-          <div>
+          <div class="rounded-md !w-full !h-full">
             <img
-              class="rounded-md"
+              class="rounded-md !w-full !h-full"
               src="/images/brown-butter-cookie-feature.png"
               alt=""
             />
@@ -99,9 +99,12 @@
             </div>
           </div>
         </div>
-
-        <!-- <div
-          className="max-md:grid max-md:grid-cols-4 max-md:grid-rows-4 max-md:gap-4 max-md:visible !bg-[#763c00] hidden"
+      </section>
+      <section
+        class="bg-[#fffeeb] h-[40rem] max-md:flex justify-center max-md:items-start max-md:!p-10 max-lg:!p-20 max-md:!xl-10 items-center bg-[url('images/feature-background.png')] bg-cover bg-no-repeat !px-[10rem] hidden"
+      >
+        <div
+          className="max-md:grid max-md:grid-cols-4 max-md:grid-rows-4 max-md:gap-4 "
         >
           <div className="col-span-4">
             <img
@@ -125,7 +128,7 @@
           <div className="col-span-2 col-start-3 row-start-4">
             <a href="#">Add to cart</a>
           </div>
-        </div> -->
+        </div>
       </section>
     </main>
   </body>
