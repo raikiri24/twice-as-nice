@@ -39,28 +39,94 @@
 
       <div class="clearfix"></div>
     </header>
-
-    <div
-      class="flex h-screen bg-[url('images/banner.png')] bg-cover bg-no-repeat"
-    >
-      <div class="w-full items-center mx-auto grid place-items-center">
-        <div
-          class="font-normal font-[family-name:'Modak'] flex items-center flex-col"
-        >
-          <p class="text-3xl">STRAIGHT OUT OF THE OVEN</p>
-          <div class="flex items-center flex-col text text-[#c43c1e] text-7xl">
-            <p>HOMEBAKED</p>
-            <p>GUDNESS!</p>
-          </div>
-          <a
-            class="border !px-12 !py-4 rounded-md text-white bg-[#8b2c2e]"
-            href="#"
+    <main>
+      <div
+        class="flex h-screen bg-[url('images/banner.png')] bg-cover bg-no-repeat max-md:bg-[right_-450px_center]"
+      >
+        <div class="w-full items-center mx-auto grid place-items-center">
+          <div
+            class="font-normal font-[family-name:'Modak'] flex items-center flex-col"
           >
-            order now
-          </a>
+            <p
+              class="text-3xl text-[#763c00] text-shadow-white text-shadow-2xs"
+            >
+              STRAIGHT OUT OF THE OVEN
+            </p>
+            <div
+              class="flex items-center flex-col text text-[#c43c1e] text-7xl"
+            >
+              <p class="text-shadow-[#8b2c2e] text-shadow-2xs">HOMEBAKED</p>
+              <p>GUDNESS!</p>
+            </div>
+            <a
+              class="border !px-12 !py-4 rounded-md text-white bg-[#8b2c2e]"
+              href="#"
+            >
+              order now
+            </a>
+          </div>
         </div>
+        <div class="w-full max-md:hidden"></div>
       </div>
-      <div class="w-full max-md:hidden"></div>
-    </div>
+      <section
+        class="bg-[#fffeeb] h-screen flex justify-center max-md:items-start max-md:!p-10 items-center bg-[url('images/feature-background.png')] bg-cover bg-no-repeat !px-[10rem]"
+      >
+        <div
+          class="grid grid-cols-4 grid-rows-1 gap-4 bg-[#763c00] rounded-md max-md:hidden items-center"
+        >
+          <div>
+            <img
+              class="rounded-md"
+              src="/images/brown-butter-cookie-feature.png"
+              alt=""
+            />
+          </div>
+          <div class="col-span-3 !text-white space-y-10 gap-8 !px-8">
+            <h1 class="text-4xl font-bold">
+              Brown butter Chocolate Chip Cookie
+            </h1>
+            <h2 class="text-2xl"><i>*Regular-sized Cookie</i></h2>
+            <p>
+              Made with golden brown butter for a deep, toasty flavor and loaded
+              with gooey chocolate chips, it's a perfect balance of crisp edges
+              and chewy centers in every bite
+            </p>
+            <div class="flex items-center justify-between">
+              <h1 class="text-4xl font-bold">P 100 Box of 3</h1>
+              <button class="bg-[#e3aa75] !p-4 rounded-md text-[#763c00]">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div
+          className="max-md:grid max-md:grid-cols-4 max-md:grid-rows-4 max-md:gap-4 max-md:visible !bg-[#763c00] hidden"
+        >
+          <div className="col-span-4">
+            <img
+              class="rounded-md"
+              src="/images/brown-butter-cookie-feature.png"
+              alt=""
+            />
+          </div>
+          <div className="col-span-4 row-start-2 flex justify-evenly">
+            <h1>Brown butter Chocolate Chip Cookie</h1>
+            <h2><i>Regular-sized Cookie</i></h2>
+          </div>
+          <div className="col-span-4 row-start-3">
+            <p>
+              Made with golden brown butter for a deep, toasty flavor and loaded
+              with gooey chocolate chips, it's a perfect balance of crisp edges
+              and chewy centers in every bite
+            </p>
+          </div>
+          <div className="col-span-2 row-start-4"><h1>P 100 Box of 3</h1></div>
+          <div className="col-span-2 col-start-3 row-start-4">
+            <a href="#">Add to cart</a>
+          </div>
+        </div> -->
+      </section>
+    </main>
   </body>
 </html>
