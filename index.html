@@ -17,7 +17,7 @@
         <div class="w-full items-center flex justify-center">
           <img
             src="images/logo.png"
-            class="!w-[80px] !h-[80px]"
+            class="!w-[160px] !h-[80px]"
             alt="Twice As Nice Bakes logo"
           />
         </div>
@@ -101,35 +101,108 @@
         </div>
       </section>
       <section
-        class="bg-[#fffeeb] h-[40rem] max-md:flex justify-center max-md:items-start max-md:!p-10 max-lg:!p-20 max-md:!xl-10 items-center bg-[url('images/feature-background.png')] bg-cover bg-no-repeat !px-[10rem] hidden"
+        class="bg-[#fffeeb] max-md:flex justify-center max-md:items-start max-md:!p-10 max-lg:!p-20 max-md:!xl-10 items-center bg-[url('images/feature-background.png')] bg-cover bg-no-repeat !px-[10rem] hidden"
       >
-        <div
-          className="max-md:grid max-md:grid-cols-4 max-md:grid-rows-4 max-md:gap-4 "
-        >
-          <div className="col-span-4">
-            <img
-              class="rounded-md"
-              src="/images/brown-butter-cookie-feature.png"
-              alt=""
-            />
+        <div class="bg-[#763c00] text-white">
+          <div class="w-full">
+            <img src="/images/brown-butter-cookie-feature.png" alt="" />
           </div>
-          <div className="col-span-4 row-start-2 flex justify-evenly">
-            <h1>Brown butter Chocolate Chip Cookie</h1>
-            <h2><i>Regular-sized Cookie</i></h2>
-          </div>
-          <div className="col-span-4 row-start-3">
+          <div class="!p-8">
+            <h1 class="text-2xl font-bold">
+              Brown butter Chocolate Chip Cookie
+            </h1>
+            <h2 class="text-xl"><i>*Regular-sized Cookie</i></h2>
             <p>
               Made with golden brown butter for a deep, toasty flavor and loaded
               with gooey chocolate chips, it's a perfect balance of crisp edges
               and chewy centers in every bite
             </p>
-          </div>
-          <div className="col-span-2 row-start-4"><h1>P 100 Box of 3</h1></div>
-          <div className="col-span-2 col-start-3 row-start-4">
-            <a href="#">Add to cart</a>
+            <div class="flex items-center justify-between">
+              <h1 class="text-2xl font-bold">P 100 Box of 3</h1>
+              <button class="bg-[#e3aa75] !p-4 rounded-md text-[#763c00]">
+                Add to cart
+              </button>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- SHOP FOR MORE -->
+      <section
+        class="!p-18 bg-[url('/images/picnic-pattern-texture.png')] bg-cover bg-no-repeat"
+      >
+        <div>
+          <h1 class="text-6xl text-white shop-for-more-text">shop for more!</h1>
+        </div>
+        <div class="flex justify-between gap-10 !mt-10 max-md:flex-col">
+          <div class="w-1/3 bg-[#ffcb65] !rounded-xl max-md:w-full">
+            <img
+              src="/images/shop-for-more-dark-choco.png"
+              alt=""
+              class="rounded-xl"
+            />
+            <div
+              class="flex justify-between text-3xl !px-8 !py-4 text-[#763c00] font-bold"
+            >
+              <h1 class="max-w-3/4">Dark Chocolate Chip Cookie</h1>
+              <h1>P 120</h1>
+            </div>
+            <div class="w-full flex justify-end !px-8 !py-8">
+              <button class="!px-4 !py-2 bg-[#8b2c2e] rounded-full text-white">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="w-1/3 bg-[#ffcb65] !rounded-xl max-md:w-full">
+            <img
+              src="/images/shop-for-more-dark-choco.png"
+              alt=""
+              class="rounded-xl"
+            />
+            <div
+              class="flex justify-between text-3xl !px-8 !py-4 text-[#763c00] font-bold"
+            >
+              <h1 class="max-w-3/4">Dark Chocolate Chip Cookie</h1>
+              <h1>P 120</h1>
+            </div>
+            <div class="w-full flex justify-end !px-8 !py-8">
+              <button class="!px-4 !py-2 bg-[#8b2c2e] rounded-full text-white">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="w-1/3 bg-[#ffcb65] !rounded-xl max-md:w-full">
+            <img
+              src="/images/shop-for-more-dark-choco.png"
+              alt=""
+              class="rounded-xl"
+            />
+            <div
+              class="flex justify-between text-3xl !px-8 !py-4 text-[#763c00] font-bold"
+            >
+              <h1 class="max-w-3/4">Dark Chocolate Chip Cookie</h1>
+              <h1>P 120</h1>
+            </div>
+            <div class="w-full flex justify-end !px-8 !py-8">
+              <button class="!px-4 !py-2 bg-[#8b2c2e] rounded-full text-white">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer
+        class="bg-[#c43c1e] flex justify-between items-center !px-10 !py-24 text-white font-bold"
+      >
+        <p>Ⓒ 2025 Twice As Nice Bakes</p>
+        <div class="flex gap-2 items-center justify-center max-w-14">
+          <img src="/images/svg/instagram.svg" alt="" />
+          <img src="/images/svg/facebook.svg" alt="" />
+        </div>
+        <p>Web Development by Ayla Manta</p>
+      </footer>
     </main>
   </body>
 </html>

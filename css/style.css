@@ -115,3 +115,8 @@ nav ul li a:hover,
 nav ul li.active a {
   color: var(--color-yellow);
 }
+
+.shop-for-more-text {
+  text-shadow: 2px 2px 0 #763c00, -2px -2px 0 #763c00, 2px -2px 0 #763c00,
+    -2px 2px 0 #763c00;
+}
