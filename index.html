@@ -73,19 +73,19 @@
         <div class="w-full max-md:hidden"></div>
       </div>
       <section
-        class="max-md:hidden bg-[#fffeeb] h-[40rem] flex justify-center max-md:items-start max-md:!p-10 !py-20 !px-20 bg-[url('images/feature-background.png')] bg-cover bg-no-repeat"
+        class="max-md:hidden bg-[#fffeeb] h-[40rem] flex justify-center max-md:items-start max-md:!p-10 !py-20 max-lg:!px-20 !px-20 bg-[url('images/feature-background.png')] bg-cover bg-no-repeat"
       >
         <div
-          class="grid grid-cols-4 grid-rows-1 gap-4 bg-[#763c00] rounded-md items-center"
+          class="grid grid-cols-4 grid-rows-1 gap-4 bg-[#763c00] rounded-4xl items-center w-[80rem]"
         >
-          <div class="rounded-md !w-full !h-full">
+          <div class="rounded-4xl !w-full !h-full col-span-2">
             <img
-              class="rounded-md !w-full !h-full"
+              class="rounded-4xl !w-full !h-full"
               src="images/brown-butter-cookie-feature.png"
               alt=""
             />
           </div>
-          <div class="col-span-3 !text-white space-y-10 gap-8 !px-8">
+          <div class="flex flex-col col-span-2 !text-white gap-4 !px-4">
             <h1 class="text-4xl font-bold">
               Brown butter Chocolate Chip Cookie
             </h1>
@@ -124,7 +124,7 @@
               and chewy centers in every bite
             </p>
             <div class="flex items-center justify-between">
-              <h1 class="text-2xl max-md:text-xs font-bold">P 100 Box of 3</h1>
+              <h1 class="text-2xl max-md:text-sm font-bold">P 100 Box of 3</h1>
               <button
                 class="bg-[#e3aa75] !p-4 rounded-md text-[#763c00] max-md:text-sm max-md:!p-2"
               >
@@ -137,7 +137,7 @@
 
       <!-- SHOP FOR MORE -->
       <section
-        class="!p-18 bg-[url('images/picnic-pattern-texture.png')] bg-cover bg-no-repeat max-md:!p-4"
+        class="!p-18 bg-[url('images/picnic-pattern-texture.png')] bg-cover bg-no-repeat bg-blend-luminosity max-md:!p-4"
       >
         <div>
           <h1
@@ -208,13 +208,68 @@
             </div>
           </div>
         </div>
+        <div class="flex items-center justify-center !py-10">
+          <a
+            href="#"
+            class="!px-10 !py-4 border rounded-full bg-white border-[#8b2c2e] text-[#8b2c2e]"
+            >View all</a
+          >
+        </div>
+      </section>
+      <!-- Carousel -->
+      <div class="!py-10 bg-[#ffcb65]"></div>
+      <section
+        class="!p-18 bg-[url('images/cookie-pattern-texture.png')] bg-cover bg-no-repeat bg-blend-luminosity max-md:!p-4"
+      >
+        <div class="w-full relative">
+          <div
+            class="absolute w-full h-full flex justify-between left-0 top-[50%]"
+          >
+            <img
+              src="images/svg/arrow-left.svg"
+              alt=""
+              class="w-[2rem] h-[2rem]"
+            />
+            <img
+              src="images/svg/arrow-right.svg"
+              alt=""
+              class="w-[2rem] h-[2rem]"
+            />
+          </div>
+        </div>
       </section>
 
+      <!-- HOW TO ORDER -->
+      <section class="!p-18 bg-[#ffcb65] max-md:!p-4">
+        <h1
+          class="text-center text-[#c43c1e] font-[family-name:'Modak'] text-6xl"
+        >
+          how to order
+        </h1>
+        <div class="flex gap-10 items-center justify-center text-[#763c00]">
+          <div>
+            <h1 class="text-center text-4xl font-bold !py-8">Add to heart</h1>
+            <p class="max-w-[40rem]">
+              Whether you're looking for a sweet snack or the perfect gift, our
+              cookies are sure to satisfy your cravings. Add to cart now and
+              experience the joy of our delicious cookies!
+            </p>
+          </div>
+          <div>
+            <h1 class="text-center text-4xl font-bold !py-8">
+              Metro Manila delivery
+            </h1>
+            <p class="max-w-[40rem]">
+              Pre-order your cookies in Metro Manila, Philippines and grab your
+              cookies hot out of the oven later in the week!
+            </p>
+          </div>
+        </div>
+      </section>
       <!-- FOOTER -->
       <footer
         class="bg-[#c43c1e] flex flex-col md:flex-row justify-between items-center !px-10 !py-24 text-white font-bold text-center md:text-left gap-6"
       >
-        <!-- Image div: first on mobile, middle on desktop -->
         <div class="order-1 md:order-2 flex gap-2 items-center justify-center">
           <img
             src="images/svg/instagram.svg"
@@ -228,10 +283,8 @@
           />
         </div>
 
-        <!-- Left text: second on mobile, first on desktop -->
         <p class="order-2 md:order-1">Ⓒ 2025 Twice As Nice Bakes</p>
 
-        <!-- Right text: third always -->
         <p class="order-3">Web Development by Ayla Manta</p>
       </footer>
     </main>
