@@ -194,14 +194,27 @@
 
       <!-- FOOTER -->
       <footer
-        class="bg-[#c43c1e] flex justify-between items-center !px-10 !py-24 text-white font-bold"
+        class="bg-[#c43c1e] flex flex-col md:flex-row justify-between items-center !px-10 !py-24 text-white font-bold text-center md:text-left gap-6"
       >
-        <p>Ⓒ 2025 Twice As Nice Bakes</p>
-        <div class="flex gap-2 items-center justify-center max-w-14">
-          <img src="images/svg/instagram.svg" alt="" />
-          <img src="images/svg/facebook.svg" alt="" />
+        <!-- Image div: first on mobile, middle on desktop -->
+        <div class="order-1 md:order-2 flex gap-2 items-center justify-center">
+          <img
+            src="images/svg/instagram.svg"
+            alt="Instagram"
+            class="max-md:w-[5rem]"
+          />
+          <img
+            src="images/svg/facebook.svg"
+            alt="Facebook"
+            class="max-md:w-[5rem]"
+          />
         </div>
-        <p>Web Development by Ayla Manta</p>
+
+        <!-- Left text: second on mobile, first on desktop -->
+        <p class="order-2 md:order-1">Ⓒ 2025 Twice As Nice Bakes</p>
+
+        <!-- Right text: third always -->
+        <p class="order-3">Web Development by Ayla Manta</p>
       </footer>
     </main>
   </body>
