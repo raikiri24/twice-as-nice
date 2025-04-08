@@ -120,3 +120,11 @@ nav ul li.active a {
   text-shadow: 2px 2px 0 #763c00, -2px -2px 0 #763c00, 2px -2px 0 #763c00,
     -2px 2px 0 #763c00;
 }
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 360px) {
+  .shop-for-more-text {
+    text-shadow: 1px 1px 0 #763c00, -1px -1px 0 #763c00, 1px -1px 0 #763c00,
+      -1px 1px 0 #763c00;
+  }
+}
