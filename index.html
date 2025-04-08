@@ -1,195 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Twice As Nice Bakes</title>
-	<link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/mobile.css">
-</head>
-<body>
-	<header>
-		<div id="logo">
-			<img src="images/logo.png" alt="Twice As Nice Bakes logo">
-		</div>
-
-		<div id="account">
-			<img src="images/svg/account.svg" alt="account">
-		</div>
-
-		<div id="shopping-bag">
-			<img src="images/svg/shopping-bag.svg" alt="account">
-		</div>
-
-		<nav>
-			<ul>
-				<li class="active"><a href="index.html">home</a></li>
-				<li><a href="#">shop</a></li>
-				<li><a href="#">about</a></li>
-				<li><a href="#">contact</a></li>
-				<li><a href="#">faqs</a></li>
-			</ul>
-		</nav>
-
-		<div class="clearfix"></div>
-	</header>
-
-	<main>
-		<div class="banner">
-			<img src="images/banner.png" alt="homebaked gudness promo banner">
-    	  <div class="overlap-group">
-     	   <div class="HOMEBAKED-GUDNESS">HOMEBAKED<br />GUDNESS!</div>
-     	   <p class="text-wrapper">STRAIGHT OUT OF THE OVEN</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Twice As Nice Bakes</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="!px-4">
+      <div id="header-icons">
+        <div>
+          <img src="images/svg/menu.svg" alt="hamburger-menu" />
+        </div>
+        <div class="w-full items-center flex justify-center">
+          <img
+            src="images/logo.png"
+            class="!w-[80px] !h-[80px]"
+            alt="Twice As Nice Bakes logo"
+          />
+        </div>
+        <div class="flex gap-2">
+          <img src="images/svg/account.svg" alt="account" />
+          <img src="images/svg/shopping-bag.svg" alt="shopping bag" />
+        </div>
       </div>
 
-      <div class="overlap">
-      	<div class="div">order now</div>
-   	 </div>
+      <nav class="flex justify-center max-md:hidden">
+        <ul class="">
+          <li class="active"><a href="index.html">home</a></li>
+          <li><a href="#">shop</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">faqs</a></li>
+        </ul>
+      </nav>
 
+      <div class="clearfix"></div>
+    </header>
 
-       <div class="promo">
-       	<div class="promo-contents">
-       		<div class="promo-left">
-       			<img class="cookie-pic" src="images/brown-butter-cookie-feature.png">
-       		</div>
-
-       		<div class="promo-right">
-       			<span class="brown-butter">Brown Butter Chocolate Chip Cookie</span>
-
-       			<p class="regular-size">*Regular-sized Cookie</p>
-
-       			<p class="brown-desc">Made with golden brown butter for a deep, toasty flavor and loaded with gooey chocolate chips, it's a perfect balance of crisp edges and chewy centers in every bite</p>
-
-       			<div class="bottom-desc">
-       				<span class="price">P 100 Box of 3</span>
-
-       				<a class="cart-button" href="#">ADD TO CART</a>
-       			</div>
-       		</div>
-       	</div>
-       </div>
-
-    <div class="shop-content">
-    <span class="more"> shop for more!</span>
-
-    <div class="shop-products">
-        <div class="shop-sample">
-            <img class="shop-pic" src="images/shop-for-more-dark-choco.png" alt="Dark Chocolate Chip Cookie">
-		 <div class="shop-desc">
-			  <span>Dark Chocolate Chip Cookie</span>
-			  <span class="shop-price">P120</span>
-			</div>
-            <a class="shop-button" href="#">ADD TO CART</a>
+    <div
+      class="flex h-screen bg-[url('images/banner.png')] bg-cover bg-no-repeat"
+    >
+      <div class="w-full items-center mx-auto grid place-items-center">
+        <div
+          class="font-normal font-[family-name:'Modak'] flex items-center flex-col"
+        >
+          <p class="text-3xl">STRAIGHT OUT OF THE OVEN</p>
+          <div class="flex items-center flex-col text text-[#c43c1e] text-7xl">
+            <p>HOMEBAKED</p>
+            <p>GUDNESS!</p>
+          </div>
+          <a
+            class="border !px-12 !py-4 rounded-md text-white bg-[#8b2c2e]"
+            href="#"
+          >
+            order now
+          </a>
         </div>
-
-        <div class="shop-sample">
-            <img class="shop-pic" src="images/shop-for-more-walnut.png" alt="Walnut Cookie">
-           <div class="shop-desc">
-			  <span>Walnut Cookie</span>
-			  <span class="shop-price">P150</span>
-			</div>
-            <a class="shop-button" href="#">ADD TO CART</a>
-        </div>
-
-        <div class="shop-sample">
-            <img class="shop-pic" src="images/shop-for-more-smores.png" alt="Smores Cookie">
-              <div class="shop-desc">
-			  <span>S'mores Cookie</span>
-			  <span class="shop-price">P160</span>
-			</div>
-            <a class="shop-button" href="#">ADD TO CART</a>
-        </div>
+      </div>
+      <div class="w-full max-md:hidden"></div>
     </div>
-
-    <a class="view" href="#">view all</a>
-</div>
-      		</div>
-      	</div>
-      </div>
-<div class="yellow"></div>
-<div class="testimonials">
-		<div class="testimonials-content">
-
-			<div class="left">
-				<img class="arrow" src="images/svg/arrow-left.svg">
-			</div>
-
-			<div class="testimonial-cards">
-
-				<div class="reviews">
-					<div class="reviews-content">
-						<div class ="review-header">
-				            <img class="cookie-icon" src="images/cookie-reviews.png" alt="#">
-				        </div>
-				        <div class="reviews-text">
-					        <p class="review-name">LUNA SAYS..</p>
-					        <p class="review-icon">Student</p>
-					        <p class="review-quote">“ They’re super duper good! Has the perfect balance! Would definitely order again.</p>
-					    </div>
-					</div>
-				</div>
-
-				<div class="reviews-bigger">
-					<div class="reviews-content-bigger">
-						<div class ="review-header-bigger">
-				            <img class="cookie-icon-bigger" src="images/cookie-reviews.png" alt="#">
-				        </div>
-				        <div class="reviews-text-bigger">
-					        <p class="review-name-bigger">LIGAYA SAYS..</p>
-					        <p class="review-icon-bigger">Mother</p>
-					        <p class="review-quote-bigger">“ The sweetness of the cookie is just right! My kids loved it. It melts right in your mouth!</p>
-					    </div>
-					</div>
-				</div>
-
-				<div class="reviews">
-					<div class="reviews-content">
-						<div class ="review-header">
-				            <img class="cookie-icon" src="images/cookie-reviews.png" alt="#">
-				        </div>
-
-				        <div class="reviews-text">
-					        <p class="review-name">JOJO SAYS..</p>
-			            	<p class="review-icon">Author</p>
-			            	<p class="review-quote">“ I love the chocolatey taste! Can’t wait to get some more.</p>
-					    </div>
-					</div>
-				</div>
-			</div>
-
-			<div class="left">
-				<img class="arrow" src="images/svg/arrow-right.svg">
-			</div>
-		</div>
-	</div>
-<div class="order">
-	 <span class="order-howto">how to order</span>
-       	<div class="order-content">
-       		<div class="order-left">
-       			<span class="order-title">Add to heart</span>
-       			<p class="order-desc">Whether you're looking for a sweet snack or the perfect gift, our cookies are sure to satisfy your cravings. Add to cart now and experience the joy of our delicious cookies!</p>
-       		</div>
-       		<div class="order-right">
-       			<span class="order-title">Metro Manila delivery</span>
-       			<p class="order-desc">Pre-order your cookies in Metro Manila, Philippines and grab your cookies hot out of the oven later in the week!</p>
-       			</div>
-       		</div>
-       	</div>
-       </div>  
-</main>
-<footer>
-  <div class="credits">
-    © 2025 Twice As Nice Bakes
-  </div>
-  <div class="social-icons">
-  	<a href="#"><img src="images/svg/instagram.svg"></a>
-    <a href="#"><img src="images/svg/facebook.svg"></a>
-  </div>
-  <div class="credits">
-    Web Development by Ayla Manta
-  </div>
-</footer>
-</body>
+  </body>
 </html>
-
