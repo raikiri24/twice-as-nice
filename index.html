@@ -95,9 +95,9 @@
               with gooey chocolate chips, it's a perfect balance of crisp edges
               and chewy centers in every bite
             </p>
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between !mt-10">
               <h1 class="text-4xl font-bold">P 100 Box of 3</h1>
-              <button class="bg-[#e3aa75] !p-4 rounded-md text-[#763c00]">
+              <button class="bg-[#F7D560] !p-4 rounded-full text-[#763c00]">
                 Add to cart
               </button>
             </div>
@@ -126,7 +126,7 @@
             <div class="flex items-center justify-between">
               <h1 class="text-2xl max-md:text-sm font-bold">P 100 Box of 3</h1>
               <button
-                class="bg-[#e3aa75] !p-4 rounded-md text-[#763c00] max-md:text-sm max-md:!p-2"
+                class="bg-[#F7D560] !p-4 rounded-full text-[#763c00] max-md:text-sm max-md:!p-2"
               >
                 Add to cart
               </button>
@@ -146,8 +146,10 @@
             shop for more!
           </h1>
         </div>
-        <div class="flex justify-between gap-10 !mt-10 max-md:flex-col">
-          <div class="w-1/3 bg-[#ffcb65] !rounded-xl max-md:w-full">
+        <div
+          class="flex justify-center gap-10 !mt-10 max-md:flex-col flex-wrap max-md:items-center"
+        >
+          <div class="max-w-[500px] bg-[#ffcb65] !rounded-xl max-md:w-full">
             <img
               src="images/shop-for-more-dark-choco.png"
               alt=""
@@ -167,16 +169,16 @@
               </button>
             </div>
           </div>
-          <div class="w-1/3 bg-[#ffcb65] !rounded-xl max-md:w-full">
+          <div class="max-w-[500px] bg-[#ffcb65] !rounded-xl max-md:w-full">
             <img
-              src="images/shop-for-more-dark-choco.png"
+              src="images/shop-for-more-walnut.png"
               alt=""
               class="rounded-xl"
             />
             <div
               class="flex justify-between text-3xl max-md:text-lg max-md:!px-4 !px-8 !py-4 text-[#763c00] font-bold"
             >
-              <h1 class="max-w-3/4">Dark Chocolate Chip Cookie</h1>
+              <h1 class="max-w-3/4">Walnut Cookie</h1>
               <h1>P 120</h1>
             </div>
             <div
@@ -187,16 +189,16 @@
               </button>
             </div>
           </div>
-          <div class="w-1/3 bg-[#ffcb65] !rounded-xl max-md:w-full">
+          <div class="max-w-[500px] bg-[#ffcb65] !rounded-xl max-md:w-full">
             <img
-              src="images/shop-for-more-dark-choco.png"
+              src="images/shop-for-more-smores.png"
               alt=""
               class="rounded-xl"
             />
             <div
               class="flex justify-between text-3xl max-md:text-lg max-md:!px-4 !px-8 !py-4 text-[#763c00] font-bold"
             >
-              <h1 class="max-w-3/4">Dark Chocolate Chip Cookie</h1>
+              <h1 class="max-w-3/4">Smores Cookie</h1>
               <h1>P 120</h1>
             </div>
             <div
@@ -211,7 +213,7 @@
         <div class="flex items-center justify-center !py-10">
           <a
             href="#"
-            class="!px-10 !py-4 border rounded-full bg-white border-[#8b2c2e] text-[#8b2c2e]"
+            class="!px-10 !py-4 border rounded-full bg-white border-[#C23B22] text-[#C23B22]"
             >View all</a
           >
         </div>
@@ -222,6 +224,67 @@
         class="!p-18 bg-[url('images/cookie-pattern-texture.png')] bg-cover bg-no-repeat bg-blend-luminosity max-md:!p-4"
       >
         <div class="w-full relative">
+          <div class="flex gap-10 justify-center max-md:!py-10">
+            <div class="min-w-[350px] max-w-[400px] bg-[#8b2c2e] rounded-4xl">
+              <div class="bg-[#ffcb65] rounded-2xl flex justify-center">
+                <img
+                  src="images/cookie-reviews.png"
+                  alt=""
+                  class="!max-w-[120px]"
+                />
+              </div>
+              <div class="!px-10 !py-10 text-white">
+                <p><b>LUNA</b> SAYS...</p>
+                <p>Student</p>
+                <p class="!px-10 font-thin">
+                  <code class="italic">
+                    " They're super duper good! Has the perfect balance! Would
+                    definetely order again.
+                  </code>
+                </p>
+              </div>
+            </div>
+            <div
+              class="min-w-[350px] max-w-[400px] !h-full bg-[#a63d3f] rounded-4xl scale-110 shadow-xl -mt-4 z-10 transition duration-300"
+            >
+              <div class="bg-[#ff964f] rounded-2xl flex justify-center">
+                <img
+                  src="images/cookie-reviews.png"
+                  alt=""
+                  class="!max-w-[120px]"
+                />
+              </div>
+              <div class="!px-10 !py-10 text-white">
+                <p><b>LIGAYA</b> SAYS...</p>
+                <p>Mother</p>
+                <p class="!px-10 font-thin">
+                  <code class="italic">
+                    " The sweetness of the cookie is just right! My kids loved
+                    it. It melts right in your mouth!
+                  </code>
+                </p>
+              </div>
+            </div>
+            <div class="min-w-[350px] max-w-[400px] bg-[#8b2c2e] rounded-4xl">
+              <div class="bg-[#ffcb65] rounded-2xl flex justify-center">
+                <img
+                  src="images/cookie-reviews.png"
+                  alt=""
+                  class="!max-w-[120px]"
+                />
+              </div>
+              <div class="!px-10 !py-10 text-white">
+                <p><b>LUNA</b> SAYS...</p>
+                <p>Student</p>
+                <p class="!px-10 font-thin">
+                  <code class="italic">
+                    " They're super duper good! Has the perfect balance! Would
+                    definetely order again.
+                  </code>
+                </p>
+              </div>
+            </div>
+          </div>
           <div
             class="absolute w-full h-full flex justify-between left-0 top-[50%]"
           >
@@ -246,7 +309,9 @@
         >
           how to order
         </h1>
-        <div class="flex gap-10 items-center justify-center text-[#763c00]">
+        <div
+          class="flex gap-10 items-center justify-center text-[#763c00] text-xl"
+        >
           <div>
             <h1 class="text-center text-4xl font-bold !py-8">Add to heart</h1>
             <p class="max-w-[40rem]">
