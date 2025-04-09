@@ -127,7 +127,7 @@ nav ul li.active a {
 }
 
 /* MOBILE VIEW */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 750px) {
   .shop-for-more-text {
     text-shadow: 1px 1px 0 #763c00, -1px -1px 0 #763c00, 1px -1px 0 #763c00,
       -1px 1px 0 #763c00;
