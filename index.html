@@ -221,7 +221,7 @@
       <!-- Carousel -->
       <div class="!py-10 bg-[#ffcb65]"></div>
       <section
-        class="!p-18 bg-[url('images/cookie-pattern-texture.png')] bg-cover bg-no-repeat bg-blend-luminosity max-md:!p-4"
+        class="!p-18 bg-[url('images/cookie-pattern-texture.png')] bg-cover bg-no-repeat bg-blend-luminosity max-md:!p-4 relative"
       >
         <div class="w-full relative">
           <div class="flex gap-10 justify-center max-md:!py-10">
@@ -233,7 +233,7 @@
                   class="!max-w-[120px]"
                 />
               </div>
-              <div class="!px-10 !py-10 text-white">
+              <div class="!px-10 !py-10 text-white overflow-auto">
                 <p><b>LUNA</b> SAYS...</p>
                 <p>Student</p>
                 <p class="!px-10 font-thin">
@@ -285,20 +285,20 @@
               </div>
             </div>
           </div>
-          <div
-            class="absolute w-full h-full flex justify-between left-0 top-[50%]"
-          >
-            <img
-              src="images/svg/arrow-left.svg"
-              alt=""
-              class="w-[2rem] h-[2rem]"
-            />
-            <img
-              src="images/svg/arrow-right.svg"
-              alt=""
-              class="w-[2rem] h-[2rem]"
-            />
-          </div>
+        </div>
+        <div
+          class="absolute w-full h-full flex justify-between left-0 top-[50%] z-50"
+        >
+          <img
+            src="images/svg/arrow-left.svg"
+            alt=""
+            class="w-[2rem] h-[2rem]"
+          />
+          <img
+            src="images/svg/arrow-right.svg"
+            alt=""
+            class="w-[2rem] h-[2rem]"
+          />
         </div>
       </section>
 
