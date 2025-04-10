@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Twice As Nice Bakes</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="!px-4 lg:!px-10">
+      <div class="flex items-center">
+        <div class="w-full">
+          <img
+            src="images/svg/menu.svg"
+            alt="hamburger-menu"
+            class="flex md:hidden lg:hidden w-[2rem]"
+          />
+        </div>
+        <div class="w-full items-center flex justify-center">
+          <img
+            src="images/logo.png"
+            class="!w-[160px] !h-[80px]"
+            alt="Twice As Nice Bakes logo"
+          />
+        </div>
+        <div class="flex w-full justify-end gap-4 lg:gap-10 items-center">
+          <img
+            src="images/svg/account.svg"
+            alt="account"
+            class="!w-[2rem] !h-[2rem]"
+          />
+          <img
+            src="images/svg/shopping-bag.svg"
+            alt="shopping bag"
+            class="!w-[2rem] !h-[2rem]"
+          />
+        </div>
+      </div>
+
+      <nav class="flex justify-center max-md:hidden">
+        <ul class="">
+          <li><a href="index.html">home</a></li>
+          <li><a href="#">shop</a></li>
+          <li><a href="#">about</a></li>
+          <li class="active"><a href="/pages/contact.html">contact</a></li>
+          <li><a href="#">faqs</a></li>
+        </ul>
+      </nav>
+
+      <div class="clearfix"></div>
+    </header>
+    <main>
+      <div
+        class="h-[200px] bg-[url('images/contact-cookie-header.png')] bg-cover bg-center"
+      ></div>
+      <div
+        class="bg-[url('images/picnic-pattern-texture-opaque.png')] bg-cover bg-no-repeat relative"
+      >
+        <div class="absolute inset-0 bg-white/10 pointer-events-none"></div>
+        <h1
+          class="text-center text-[#c43c1e] font-[family-name:'Modak'] text-6xl !py-10"
+        >
+          contact us
+        </h1>
+        <p class="text-center font-bold text-[#763c00]">
+          YOU CAN SEND US A DM IN INSTAGRAM OR SEND US AN EMAIL USING THE FORM
+          BELOW
+        </p>
+        <div class="!flex !flex-wrap !gap-4 !p-4 lg:!px-120 lg:!py-10">
+          <div class="flex w-full gap-4">
+            <input
+              type="text"
+              placeholder="Name"
+              class="bg-white border border-gray-700 text-xl rounded-md !px-4 !py-2 w-full"
+            />
+
+            <input
+              type="number"
+              placeholder="Phone Number"
+              class="bg-white border border-gray-700 text-xl rounded-md !px-4 !py-2 w-full !peer !appearance-none"
+            />
+          </div>
+          <div class="!flex !flex-col !w-full !mt-2">
+            <input
+              type="text"
+              placeholder="Email"
+              class="bg-white border border-gray-700 text-xl rounded-md !px-4 !py-2"
+            />
+          </div>
+          <div class="!flex !flex-col !w-full !mt-2">
+            <textarea
+              name=""
+              id=""
+              class="bg-white border border-gray-700 text-xl rounded-md !px-4 !py-2"
+              placeholder="Comments"
+            ></textarea>
+          </div>
+          <div
+            class="!flex !flex-col !px-20 !py-4 rounded-md bg-[#ef8535] text-white border !mt-2"
+          >
+            <button>Send</button>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="bg-[#c43c1e] flex flex-col md:flex-row justify-between items-center !px-10 !py-24 text-white font-bold text-center md:text-left gap-6"
+      >
+        <div class="order-1 md:order-2 flex gap-2 items-center justify-center">
+          <img
+            src="images/svg/instagram.svg"
+            alt="Instagram"
+            class="max-md:w-[2rem] w-[2rem]"
+          />
+          <img
+            src="images/svg/facebook.svg"
+            alt="Facebook"
+            class="max-md:w-[2rem] w-[2rem]"
+          />
+        </div>
+
+        <p class="order-2 md:order-1">Ⓒ 2025 Twice As Nice Bakes</p>
+
+        <p class="order-3">Web Development by Ayla Manta</p>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -13,6 +13,8 @@
   --color-orange: #ef8535; /* dark orange */
 }
 
+@tailwind utilities;
+
 @theme {
   --font-modak: "Modak", "sans-serif";
 }
@@ -111,6 +113,16 @@ nav ul li.active a {
 .shop-for-more-text {
   text-shadow: 2px 2px 0 #763c00, -2px -2px 0 #763c00, 2px -2px 0 #763c00,
     -2px 2px 0 #763c00;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove the number input arrows in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 /* MOBILE VIEW */
