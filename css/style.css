@@ -68,19 +68,6 @@ header {
   align-self: center;
 }
 
-#header-icons {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 10px 20px;
-  align-items: center;
-}
-
-#header-icons img {
-  width: 30px;
-  height: 30px;
-}
-
 nav ul {
   display: flex;
   align-self: center;
