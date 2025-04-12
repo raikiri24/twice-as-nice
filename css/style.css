@@ -132,3 +132,16 @@ input[type="number"] {
       -1px 1px 0 #763c00;
   }
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  animation: marquee 15s linear infinite;
+}
