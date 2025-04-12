@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <header class="!px-4 lg:!px-10">
+    <header class="!px-4 lg:!px-10 z-50">
       <div class="flex items-center !py-4">
         <div class="w-full">
           <img
@@ -43,9 +43,9 @@
         <ul class="">
           <li><a href="index.html">home</a></li>
           <li><a href="/twice-as-nice/#">shop</a></li>
-          <li><a href="/twice-as-nice/about.html">about</a></li>
+          <li class="active"><a href="/twice-as-nice/about.html">about</a></li>
           <li><a href="/twice-as-nice/contact.html">contact</a></li>
-          <li class="active">
+          <li>
             <a href="/twice-as-nice/faqs.html">faqs</a>
           </li>
         </ul>
@@ -102,13 +102,13 @@
         </div>
       </div>
       <div
-        class="flex lg:flex-row flex-col lg:!px-[10rem] !px-4 lg:!py-[4rem] !py-10 gap-10 justify-evenly"
+        class="flex lg:flex-row flex-col lg:!px-[10rem] !px-8 lg:!pb-[4rem] !pb-10 gap-10 justify-evenly"
       >
         <div>
           <h1 class="text-lg font-bold text-[#c43c1e] !text-4xl text-center">
             MISSION
           </h1>
-          <p>
+          <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
             explicabo!
           </p>
@@ -117,7 +117,7 @@
           <h1 class="text-lg font-bold text-[#c43c1e] !text-4xl text-center">
             VISION
           </h1>
-          <p>
+          <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
             explicabo!
           </p>
@@ -128,11 +128,13 @@
           <img
             src="../images/shop-for-more-dark-choco.png"
             alt=""
-            class="lg:rounded-r-4xl w-[40rem]"
+            class="lg:rounded-r-4xl md:w-full lg:w-[30rem] lg:max-h-[40rem]"
           />
-          <div class="lg:!px-[5rem] lg:!py-[2rem] !p-10">
+          <div
+            class="lg:!px-[5rem] lg:!py-[2rem] !p-10 max-w-[70rem] lg:max-h-[20rem] overflow-hidden"
+          >
             <h1 class="font-bold text-4xl">OUR COOKIES</h1>
-            <div class="flex flex-col gap-10 !mt-4">
+            <div class="flex flex-col gap-10 !mt-4 w-full text-ellipsis">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem incidunt dignissimos repellendus magnam quidem harum
