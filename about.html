@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Twice As Nice Bakes</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
@@ -55,9 +55,11 @@
     </header>
     <main>
       <div
-        class="w-screen flex items-center justify-center !px-4 !py-10 lg:!p-40"
+        class="w-full flex items-center justify-center !px-4 !py-10 lg:!p-40 !mt-10"
       >
-        <div class="bg-[#FFCB65] border-[#C43D1F] border-4 relative">
+        <div
+          class="bg-[#FFCB65] border-[#C43D1F] border-4 relative rounded-4xl"
+        >
           <div
             class="absolute top-[-4rem] lg:top-[-10rem] left-[1rem] flex justify-between w-full items-center"
           >
@@ -69,33 +71,38 @@
             <img
               src="images/favicon.png"
               alt=""
-              class="lg:w-[20rem] w-[10rem] absolute lg:top-[-3.5vh] right-4 lg:right-10 top-[-33px]"
+              class="lg:w-[20rem] w-[10rem] absolute lg:top-[-32px] right-10 top-[-33px]"
             />
           </div>
-          <div class="!p-14 flex lg:flex-row flex-col gap-4 lg:gap-20">
-            <div class="flex flex-col lg:gap-10 gap-4 text-xs font-bold">
+          <div
+            class="!p-14 flex lg:flex-row flex-col gap-4 lg:gap-20 text-[#763c00]"
+          >
+            <div
+              class="flex flex-col lg:gap-10 gap-4 text-xs font-extrabold w-full"
+            >
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
-                illo, sint debitis, dolor eos aspernatur reprehenderit mollitia
-                cupiditate tempora eveniet, at architecto repellat omnis
-                recusandae. Alias iure perferendis sunt vel aliquid porro
-                aspernatur,
+                Twice as Nice Bakes was born from a simple love for baking and a
+                passion for sharing joy through delicious cookies. What began as
+                a home kitchen experiment has blossomed into a beloved cookie
+                business, bringing smiles to our customers with every batch.
               </p>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
-                illo, sint debitis, dolor eos aspernatur reprehenderit mollitia
-                cupiditate tempora eveniet, at architecto repellat omnis
-                recusandae. Alias iure perferendis sunt vel aliquid porro
-                aspernatur,
+                Behind Twice as Nice Bakes is a dedicated team of bakers and
+                cookie enthusiasts. Led by Vince Hernandez, our team is
+                committed to perfection in every cookie we make. We pour our
+                hearts into our work, ensuring that each cookie is crafted with
+                love and care.
               </p>
             </div>
-            <div class="text-xs lg:!py-10 font-bold">
+            <div class="text-xs lg:!py-10 font-extrabold w-full">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
-                illo, sint debitis, dolor eos aspernatur reprehenderit mollitia
-                cupiditate tempora eveniet, at architecto repellat omnis
-                recusandae. Alias iure perferendis sunt vel aliquid porro
-                aspernatur,
+                At Twice as Nice Bakes, we believe that cookies are more than
+                just a treat—they're a way to create connections, celebrate
+                moments, and bring a little extra sweetness into everyday life.
+                Our dedication to quality and flavor drives us to use only the
+                finest, locally sourced ingredients in our baking. Every cookie
+                is handcrafted with love, ensuring that you experience the same
+                joy we felt when we first started.
               </p>
             </div>
           </div>
@@ -104,22 +111,27 @@
       <div
         class="flex lg:flex-row flex-col lg:!px-[10rem] !px-8 lg:!pb-[4rem] !pb-10 gap-10 justify-evenly"
       >
-        <div>
-          <h1 class="text-lg font-bold text-[#c43c1e] !text-4xl text-center">
+        <div class="w-full">
+          <h1
+            class="text-lg font-extrabold text-[#c43c1e] !text-4xl text-center"
+          >
             MISSION
           </h1>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-            explicabo!
+          <p class="text-left text-[#763c00]">
+            To create and deliver the most delicious cookies, bringing joy with
+            every bite, using only the finest ingredients and craftsmanship.
           </p>
         </div>
-        <div>
-          <h1 class="text-lg font-bold text-[#c43c1e] !text-4xl text-center">
+        <div class="w-full">
+          <h1
+            class="text-lg font-extrabold text-[#c43c1e] !text-4xl text-center"
+          >
             VISION
           </h1>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-            explicabo!
+          <p class="text-left text-[#763c00]">
+            To be the leading cookie brand known for quality, innovation, and
+            customer satisfaction, while making a positive impact on our
+            community and environment.
           </p>
         </div>
       </div>
@@ -133,8 +145,10 @@
           <div
             class="lg:!px-[5rem] lg:!py-[2rem] !p-10 max-w-[70rem] lg:max-h-[40rem] overflow-hidden"
           >
-            <h1 class="font-bold text-4xl">OUR COOKIES</h1>
-            <div class="flex flex-col gap-10 !mt-4 w-full text-ellipsis">
+            <h1 class="text-4xl text-[#763c00] font-extrabold">OUR COOKIES</h1>
+            <div
+              class="flex flex-col gap-10 !mt-4 w-full text-ellipsis text-[#763c00]"
+            >
               <p>
                 At Twice as Nice Bakes, our baking process is all about quality
                 and care. We start with the finest, locally sourced ingredients
@@ -159,16 +173,17 @@
         <div
           class="text-white flex flex-col justify-center items-center lg:flex-row lg:items-center lg:justify-between !px-[10vw] lg:gap-0 gap-10"
         >
-          <div class="w-[20vw]">
+          <div class="lg:w-[40vw]">
             <h1
-              class="text-white font-[family-name:'Modak'] text-4xl lg:text-[4rem] !py-10 lg:text-left text-center"
+              class="lg:!w-[20vw] text-white font-[family-name:'Modak'] text-4xl lg:text-[4rem] !py-10 lg:text-left text-center"
             >
               STAY CONNECTED WITH US
             </h1>
             <div class="lg:text-left text-center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus,
-              ab harum dicta deleniti dolor possimus doloribus eligendi
-              voluptates officia? Nisi.
+              Stay connected with us on for the latest updates, special offers,
+              and behind-the-scenes peeks into our baking adventures. Join us on
+              this sweet journey and indulge in the Twice as Nice Bakes
+              experience!
             </div>
           </div>
           <div class="flex flex-col gap-4">
@@ -193,7 +208,7 @@
       </div>
 
       <footer
-        class="bg-[#c43c1e] flex flex-col md:flex-row justify-between items-center !px-10 !py-14 text-white font-bold text-center md:text-left gap-6"
+        class="bg-[#c43c1e] lg:!px-[10vw] flex flex-col md:flex-row justify-between items-center !px-10 !py-14 text-white font-extrabold text-center md:text-left gap-6"
       >
         <p class="order-2 md:order-1">Ⓒ 2025 Twice As Nice Bakes</p>
 
