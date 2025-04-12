@@ -54,63 +54,56 @@
       <div class="clearfix"></div>
     </header>
     <main>
-      <div class="w-screen flex items-center justify-center !p-20">
+      <div
+        class="w-screen flex items-center justify-center !px-4 !py-10 lg:!p-20"
+      >
         <div class="bg-[#FFCB65] border-[#C43D1F] border-4 relative">
-          <div class="absolute top-[-5rem] left-[1rem]">
+          <div
+            class="absolute top-[-5rem] lg:top-[-10rem] left-[1rem] flex justify-between w-full items-center"
+          >
             <h1
-              class="text-center text-[#c43c1e] font-[family-name:'Modak'] text-7xl !py-10"
+              class="text-center text-[#c43c1e] font-[family-name:'Modak'] text-4xl lg:text-[10rem] !py-10"
             >
               about us
             </h1>
+            <img
+              src="images/favicon.png"
+              alt=""
+              class="lg:w-[20rem] w-[10rem]"
+            />
           </div>
-          <div class="!p-14 flex gap-20">
-            <div class="flex flex-col gap-10 text-xs">
+          <div class="!p-14 flex lg:flex-row flex-col gap-4 lg:gap-20">
+            <div class="flex flex-col lg:gap-10 gap-4 text-xs font-bold">
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
                 illo, sint debitis, dolor eos aspernatur reprehenderit mollitia
                 cupiditate tempora eveniet, at architecto repellat omnis
                 recusandae. Alias iure perferendis sunt vel aliquid porro
-                aspernatur, quas obcaecati, vitae ducimus fuga, nisi voluptatum
-                facilis tempora unde deleniti enim voluptatibus accusantium
-                ipsum. Atque voluptatum ex, numquam quidem corporis molestiae
-                minus aliquid dolorum possimus nulla sit qui totam velit,
-                eveniet voluptates ipsum! Dignissimos, saepe veniam! Impedit
-                repellendus quisquam, mollitia non quae rem deserunt sapiente
-                expedita.
+                aspernatur,
               </p>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
                 illo, sint debitis, dolor eos aspernatur reprehenderit mollitia
                 cupiditate tempora eveniet, at architecto repellat omnis
                 recusandae. Alias iure perferendis sunt vel aliquid porro
-                aspernatur, quas obcaecati, vitae ducimus fuga, nisi voluptatum
-                facilis tempora unde deleniti enim voluptatibus accusantium
-                ipsum. Atque voluptatum ex, numquam quidem corporis molestiae
-                minus aliquid dolorum possimus nulla sit qui totam velit,
-                eveniet voluptates ipsum! Dignissimos, saepe veniam! Impedit
-                repellendus quisquam, mollitia non quae rem deserunt sapiente
-                expedita.
+                aspernatur,
               </p>
             </div>
-            <div class="text-xs">
+            <div class="text-xs lg:!py-10 font-bold">
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
                 illo, sint debitis, dolor eos aspernatur reprehenderit mollitia
                 cupiditate tempora eveniet, at architecto repellat omnis
                 recusandae. Alias iure perferendis sunt vel aliquid porro
-                aspernatur, quas obcaecati, vitae ducimus fuga, nisi voluptatum
-                facilis tempora unde deleniti enim voluptatibus accusantium
-                ipsum. Atque voluptatum ex, numquam quidem corporis molestiae
-                minus aliquid dolorum possimus nulla sit qui totam velit,
-                eveniet voluptates ipsum! Dignissimos, saepe veniam! Impedit
-                repellendus quisquam, mollitia non quae rem deserunt sapiente
-                expedita.
+                aspernatur,
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="flex !px-[10rem] !py-[4rem] justify-evenly">
+      <div
+        class="flex lg:flex-row flex-col lg:!px-[10rem] !px-4 lg:!py-[4rem] !py-10 gap-10 justify-evenly"
+      >
         <div>
           <h1 class="text-lg font-bold text-[#c43c1e] !text-4xl text-center">
             MISSION
@@ -130,16 +123,16 @@
           </p>
         </div>
       </div>
-      <div class="h-screen bg-[#c43c1e] !py-10">
-        <div class="bg-[#FFCB65] w-full flex">
+      <div class="bg-[#c43c1e] !py-10">
+        <div class="bg-[#FFCB65] lg:w-full flex lg:flex-row flex-col">
           <img
             src="images/shop-for-more-dark-choco.png"
             alt=""
-            class="rounded-r-4xl w-[40rem]"
+            class="lg:rounded-r-4xl w-[40rem]"
           />
-          <div class="!px-[5rem] !py-[2rem]">
+          <div class="lg:!px-[5rem] lg:!py-[2rem] !p-10">
             <h1 class="font-bold text-4xl">OUR COOKIES</h1>
-            <div class="flex flex-col gap-10">
+            <div class="flex flex-col gap-10 !mt-4">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem incidunt dignissimos repellendus magnam quidem harum
@@ -169,24 +162,45 @@
             </div>
           </div>
         </div>
+        <div
+          class="text-white flex flex-col justify-center items-center lg:flex-row lg:items-center lg:justify-between !px-10 lg:gap-0 gap-10"
+        >
+          <div>
+            <h1
+              class="text-white font-[family-name:'Modak'] text-4xl lg:text-[4rem] !py-10 lg:text-left text-center"
+            >
+              STAY CONNECTED WITH US
+            </h1>
+            <div class="lg:text-left text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus,
+              ab harum dicta deleniti dolor possimus doloribus eligendi
+              voluptates officia? Nisi.
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center">
+              <img
+                src="images/svg/instagram.svg"
+                alt="Instagram"
+                class="max-md:w-[2rem] w-[2rem]"
+              />
+              <a href="#">@twiceasnicebakes</a>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="images/svg/facebook.svg"
+                alt="Facebook"
+                class="max-md:w-[2rem] w-[2rem]"
+              />
+              <a href="#">Twice As Nice Bakes</a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <footer
         class="bg-[#c43c1e] flex flex-col md:flex-row justify-between items-center !px-10 !py-24 text-white font-bold text-center md:text-left gap-6"
       >
-        <div class="order-1 md:order-2 flex gap-2 items-center justify-center">
-          <img
-            src="images/svg/instagram.svg"
-            alt="Instagram"
-            class="max-md:w-[2rem] w-[2rem]"
-          />
-          <img
-            src="images/svg/facebook.svg"
-            alt="Facebook"
-            class="max-md:w-[2rem] w-[2rem]"
-          />
-        </div>
-
         <p class="order-2 md:order-1">Ⓒ 2025 Twice As Nice Bakes</p>
 
         <p class="order-3">Web Development by Ayla Manta</p>
