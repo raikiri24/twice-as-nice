@@ -7,16 +7,88 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   </head>
   <body>
     <header class="!px-4 lg:!px-10">
       <div class="flex items-center !py-4">
         <div class="w-full">
-          <img
-            src="images/svg/menu.svg"
-            alt="hamburger-menu"
-            class="flex md:hidden lg:hidden w-[2rem]"
-          />
+          <button
+            data-collapse-toggle="navbar-hamburger"
+            type="button"
+            class="lg:hidden inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white dark:text-white dark:hover:bg-orange-500 dark:focus:ring-gray-600"
+            aria-controls="navbar-hamburger"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div
+            class="hidden w-screen h-screen absolute dark:bg-[#c43c1e] dark:border-gray-700 z-50 top-0 left-0"
+            id="navbar-hamburger"
+          >
+            <div class="w-full flex justify-end">
+              <button
+                data-collapse-toggle="navbar-hamburger"
+                type="button"
+                class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white dark:text-white dark:hover:bg-orange-500 dark:focus:ring-gray-600"
+                aria-controls="navbar-hamburger"
+                aria-expanded="true"
+              >
+                <span class="text-2xl font-bold">X</span>
+              </button>
+            </div>
+            <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50">
+              <li>
+                <a
+                  href="/twice-as-nice/index.html"
+                  class="!p-2 text-2xl block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 !text-white !bg-[#ffcb65]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/twice-as-nice/shop.html"
+                  class="!p-2 text-2xl block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/twice-as-nice/about.html"
+                  class="!p-2 text-2xl block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/twice-as-nice/contact.html"
+                  class="!p-2 text-2xl block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/twice-as-nice/faqs.html"
+                  class="!p-2 text-2xl block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                  >FAQs</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="w-full items-center flex justify-center">
           <img
@@ -62,18 +134,18 @@
             class="font-normal font-[family-name:'Modak'] flex items-center flex-col"
           >
             <p
-              class="text-3xl text-[#763c00] text-shadow-white text-shadow-2xs max-md:text-2xl"
+              class="text-3xl text-[#763c00] text-stroke-white max-md:text-2xl"
             >
               STRAIGHT OUT OF THE OVEN
             </p>
             <div
               class="flex items-center flex-col text text-[#c43c1e] text-7xl max-md:text-6xl"
             >
-              <p class="text-shadow-[#8b2c2e] text-shadow-lg">HOMEBAKED</p>
-              <p class="text-shadow-[#8b2c2e] text-shadow-lg">GUDNESS!</p>
+              <p class="text-stroke">HOMEBAKED</p>
+              <p class="text-stroke">GUDNESS!</p>
             </div>
             <a
-              class="border !px-12 !py-4 max-md:!px-8 max-md:!py-2 max-md:text-sm rounded-xl lg:!rounded-3xl text-white bg-[#8b2c2e]"
+              class="border !px-12 !py-4 max-md:!px-8 max-md:!py-2 max-md:text-sm rounded-xl lg:!rounded-3xl !text-white bg-[#8b2c2e]"
               href="#"
             >
               order now
@@ -256,7 +328,7 @@
             >
               <p><b>LUNA</b> SAYS...</p>
               <p>Student</p>
-              <p class="!px-10 max-md:!px-[2vw] font-thin">
+              <p class="!px-4 max-md:!px-[2vw] font-thin !text-justify">
                 <code class="italic">
                   " They're super duper good! Has the perfect balance! Would
                   definetely order again.
@@ -279,7 +351,7 @@
             >
               <p><b>LIGAYA</b> SAYS...</p>
               <p>Mother</p>
-              <p class="!px-10 max-md:!px-[2vw] font-thin">
+              <p class="!px-4 max-md:!px-[2vw] font-thin !text-justify">
                 <code class="italic">
                   " The sweetness of the cookie is just right! My kids loved it.
                   It melts right in your mouth!
@@ -302,7 +374,7 @@
             >
               <p><b>JOJO</b> SAYS...</p>
               <p>Author</p>
-              <p class="!px-10 max-md:!px-[2vw] font-thin">
+              <p class="!px-4 max-md:!px-[2vw] font-thin !text-justify">
                 <code class="italic">
                   " I love the chocolatey taste! Can't wait to get some more.
                 </code>
@@ -316,33 +388,35 @@
           <img
             src="images/svg/arrow-left.svg"
             alt=""
-            class="w-[2rem] h-[2rem]"
+            class="!w-[2rem] !h-[2rem]"
           />
           <img
             src="images/svg/arrow-right.svg"
             alt=""
-            class="w-[2rem] h-[2rem]"
+            class="!w-[2rem] !h-[2rem]"
           />
         </div>
       </section>
 
       <!-- HOW TO ORDER -->
-      <section class="!p-18 bg-[#ffcb65] max-md:!p-4">
+      <section class="!p-18 bg-[#ffcb65] max-md:!p-10">
         <h1
-          class="text-center text-[#c43c1e] font-[family-name:'Modak'] text-6xl"
+          class="text-center text-[#c43c1e] font-[family-name:'Modak'] lg:text-6xl text-4xl"
         >
           how to order
         </h1>
         <div
-          class="flex gap-10 items-center justify-center text-[#763c00] text-xl"
+          class="flex-col lg:flex-row flex gap-10 items-center justify-center text-[#763c00] text-xl"
         >
           <div>
             <h1
-              class="text-center text-4xl font-bold !py-8 text-base md:text-xl lg:text-4xl"
+              class="text-center text-4xl font-bold !py-4 lg:!py-8 text-xl md:text-xl lg:text-4xl"
             >
               Add to heart
             </h1>
-            <p class="max-w-[40rem] text-xs md:text-sm lg:text-base">
+            <p
+              class="max-w-[40rem] text-lg md:text-sm lg:text-base text-justify"
+            >
               Whether you're looking for a sweet snack or the perfect gift, our
               cookies are sure to satisfy your cravings. Add to cart now and
               experience the joy of our delicious cookies!
@@ -350,11 +424,13 @@
           </div>
           <div>
             <h1
-              class="text-center text-4xl font-bold !py-8 text-base md:text-xl lg:text-4xl"
+              class="text-center text-4xl font-bold !py-4 lg:!py-8 text-xl md:text-xl lg:text-4xl"
             >
               Metro Manila delivery
             </h1>
-            <p class="max-w-[40rem] text-xs md:text-sm lg:text-base">
+            <p
+              class="max-w-[40rem] text-lg md:text-sm lg:text-base text-justify"
+            >
               Pre-order your cookies in Metro Manila, Philippines and grab your
               cookies hot out of the oven later in the week!
             </p>

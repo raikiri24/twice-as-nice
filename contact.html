@@ -7,16 +7,88 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   </head>
   <body>
     <header class="!px-4 lg:!px-10">
       <div class="flex items-center !py-4">
         <div class="w-full">
-          <img
-            src="images/svg/menu.svg"
-            alt="hamburger-menu"
-            class="flex md:hidden lg:hidden w-[2rem]"
-          />
+          <button
+            data-collapse-toggle="navbar-hamburger"
+            type="button"
+            class="lg:hidden inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white dark:text-white dark:hover:bg-orange-500 dark:focus:ring-gray-600"
+            aria-controls="navbar-hamburger"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div
+            class="hidden w-screen h-screen absolute dark:bg-[#c43c1e] dark:border-gray-700 z-50 top-0 left-0"
+            id="navbar-hamburger"
+          >
+            <div class="w-full flex justify-end">
+              <button
+                data-collapse-toggle="navbar-hamburger"
+                type="button"
+                class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white dark:text-white dark:hover:bg-orange-500 dark:focus:ring-gray-600"
+                aria-controls="navbar-hamburger"
+                aria-expanded="true"
+              >
+                <span class="text-2xl font-bold">X</span>
+              </button>
+            </div>
+            <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50">
+              <li>
+                <a
+                  href="/twice-as-nice/index.html"
+                  class="!p-2 text-2xl block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/twice-as-nice/shop.html"
+                  class="!p-2 text-2xl block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/twice-as-nice/about.html"
+                  class="!p-2 text-2xl block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/twice-as-nice/contact.html"
+                  class="!p-2 text-2xl block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 !text-white !bg-[#ffcb65]"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/twice-as-nice/faqs.html"
+                  class="!p-2 text-2xl block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >FAQs</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="w-full items-center flex justify-center">
           <img
