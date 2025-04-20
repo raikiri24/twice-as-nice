@@ -179,3 +179,7 @@ input[type="number"] {
   opacity: 1;
   background-color: #a63d3f;
 }
+
+.owl-carousel .owl-item img {
+  display: block;
+}
