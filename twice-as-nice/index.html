@@ -8,6 +8,15 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
   </head>
   <body>
     <header class="!px-4 lg:!px-10">
@@ -308,13 +317,13 @@
       <div class="!py-2 lg:!py-10 bg-[#ffcb65]"></div>
 
       <section
-        class="!p-18 bg-[url('../images/cookie-pattern-texture.png')] bg-cover bg-no-repeat bg-blend-luminosity max-md:!p-4 relative !overflow-hidden"
+        class="!p-18 bg-[url('../images/cookie-pattern-texture.png')] bg-cover bg-no-repeat bg-blend-luminosity max-md:!p-4 relative"
       >
         <div
-          class="!inline-flex w-full gap-6 md:gap-10 lg:gap-24 justify-center !px-[2vw] !py-10"
+          class="!inline-flex w-full gap-6 md:gap-10 lg:gap-24 justify-center !px-[2vw] !py-10 owl-carousel"
         >
           <div
-            class="!min-w-[40vw] lg:!min-w-[350px] lg:!max-w-[350px] bg-[#8b2c2e] rounded-4xl"
+            class="item !min-w-[40vw] lg:!min-w-[350px] lg:!max-w-[350px] bg-[#8b2c2e] rounded-4xl item !h-full"
           >
             <div class="bg-[#ffcb65] rounded-2xl flex justify-center">
               <img
@@ -337,7 +346,7 @@
             </div>
           </div>
           <div
-            class="!min-w-[60vw] lg:!min-w-[350px] lg:!max-w-[350px] rounded-4xl bg-[#a63d3f] rounded-4xl scale-110 shadow-xl -mt-4 z-10 transition duration-300"
+            class="!min-w-[40vw] lg:!min-w-[350px] lg:!max-w-[350px] bg-[#8b2c2e] rounded-4xl !h-full item"
           >
             <div class="bg-[#ff964f] rounded-2xl flex justify-center">
               <img
@@ -360,7 +369,7 @@
             </div>
           </div>
           <div
-            class="!min-w-[40vw] lg:!min-w-[350px] lg:!max-w-[350px] bg-[#8b2c2e] rounded-4xl"
+            class="!min-w-[40vw] lg:!min-w-[350px] lg:!max-w-[350px] bg-[#8b2c2e] rounded-4xl !h-full item"
           >
             <div class="bg-[#ffcb65] rounded-2xl flex justify-center">
               <img
@@ -389,11 +398,13 @@
             src="../images/svg/arrow-left.svg"
             alt=""
             class="!w-[2rem] !h-[2rem]"
+            id="customPrev"
           />
           <img
             src="../images/svg/arrow-right.svg"
             alt=""
             class="!w-[2rem] !h-[2rem]"
+            id="customNext"
           />
         </div>
       </section>
@@ -459,5 +470,45 @@
         <p class="order-3">Web Development by Ayla Manta</p>
       </footer>
     </main>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        const owl = $(".owl-carousel");
+
+        owl.owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: false,
+          dots: false,
+          center: true,
+          responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 },
+          },
+        });
+
+        $("#customNext").click(function () {
+          owl.trigger("next.owl.carousel");
+        });
+
+        $("#customPrev").click(function () {
+          owl.trigger("prev.owl.carousel");
+        });
+
+        owl.on("changed.owl.carousel", function (event) {
+          setTimeout(function () {
+            $(".owl-item .item").removeClass("center");
+            $(".owl-item.active.center .item").addClass("center");
+          }, 10);
+        });
+
+        $(".owl-item.active.center .item").addClass("center");
+      });
+    </script>
   </body>
 </html>

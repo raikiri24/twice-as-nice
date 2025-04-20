@@ -174,3 +174,8 @@ input[type="number"] {
 .owl-item:not(.center) > div:hover {
   opacity: 0.75;
 }
+
+.item.center {
+  opacity: 1;
+  background-color: #a63d3f;
+}
